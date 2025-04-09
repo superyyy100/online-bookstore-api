@@ -33,28 +33,30 @@ This is a simple RESTful API for an online bookstore, implemented using TypeScri
 - Returns a 404 status if a book is not found.
 - Returns a 400 Bad Request if the input data is invalid.
 
-### Project Structure 
+### Project Structure
+```md
+online-bookstore-api
 
-> online-bookstore-api/
-> ├── src/
-> │   ├── app.ts
-> │   ├── routes/
-> │   │   └──route.ts
-> │   ├── controllers/
-> │   │   └──bookController.ts
-> │   ├── services/
-> │   │   └──bookService.ts
-> │   ├── types/
-> │   │   └──book.ts
-> │   ├── data/ 
-> │   │   └──books.ts
-> │   ├── specs/
-> │   │   └── openapi.yaml
-> │   └── test/
-> │       └── books.test.ts 
-> ├── package.json
-> ├── package-lock.json
-> ├── nodemon.json
-> ├── tsconfig.json
-> ├── jest.config.js
-> └── README.md
+src/
+├── routes/
+│   └── route.ts
+├── controllers/
+│   └── bookController.ts
+├── services/
+│   └── bookService.ts
+├── types/
+│   └── book.ts
+├── data/
+│   └── books.ts
+├── specs/
+│   └── openapi.yaml
+├── test/
+│   └── book.test.ts
+├── app.ts
+├── package.json
+├── package-lock.json
+├── nodemon.json
+├── tsconfig.json
+├── jest.config.js
+└── README.md
+```
